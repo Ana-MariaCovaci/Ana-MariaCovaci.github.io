@@ -1,0 +1,143 @@
+/* Min tap area for clickable items */
+a,
+button {
+    min-width: 48px;
+    min-height: 48px;
+}
+
+/* General styles */
+section,
+footer {
+    padding-top: 80px;
+}
+
+body {
+    font-family: 'Kaushan Script', cursive;
+}
+
+section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Great Vibes', cursive;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #fff;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-header button {
+    background-color: transparent !important;
+    border: 0;
+}
+
+.navbar-nav li a,
+.navbar .navbar-brand {
+    transition: all 0.5s ease;
+    padding: 20px;
+    font-size: 36px;
+    font-family: 'Great Vibes', cursive;
+}
+
+.navbar-nav li a:hover {
+    font-weight: bold;
+    letter-spacing: 10px;
+    transform: translate(0, -2px);
+    background: transparent !important;
+}
+
+/*
+ * Navbar toggle - hamburger icon transforms into an "x"
+ */
+.top-bar,
+.middle-bar,
+.bottom-bar {
+    transition: 0.7s;
+}
+
+/* Rotate first bar */
+.change .top-bar {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+/* Rotate and fade out the middle bar */
+.change .middle-bar {
+    transform: rotate(360deg);
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bottom-bar {
+    transform: rotate(45deg);
+}
+
+/* "Who" section styles */
+.who {
+    color: #f40;
+}
+
+/* "What" section styles */
+.what {
+    color: #ff87b1;
+}
+
+.thumbnail {
+    padding: 0 10px 15px 10px;
+    border: none;
+    transition: 0.5s ease-in-out;
+}
+
+.thumbnail img {
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.thumbnail p:first-of-type {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.thumbnail:hover {
+    transform: translate(0, -10px) rotate(-5deg);
+}
+
+.thumbnail:hover img {
+    transform: translate(0, -10px) rotate(5deg);
+	opacity: 0.5;
+}
+
+/* "How" section styles */
+.how {
+    color: #f35772;
+}
+
+/* "Where" Section styles*/
+.where {
+    color: #df15a2;
+}
+
+.social {
+    transition: all 0.5s ease;
+    font-size: 48px;
+    margin: 10px;
+    color: #d3d3d3;
+}
+
+.fa-linkedin-square:hover {
+    color: #007bb6;
+}
+
+.fa-github:hover {
+    color: #333;
+}
